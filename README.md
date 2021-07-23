@@ -1,4 +1,3 @@
 # Sentiment-analyis-BERT-Trained-on BERT most accurate model
-![Screenshot (7)](https://user-images.githubusercontent.com/61107453/126739264-b377bcb8-50e3-4472-9599-04e9e6db21ca.png)
-
-![Screenshot (9)](https://user-images.githubusercontent.com/61107453/126739283-254d63b3-1d88-4b08-878e-34ea0f8c94a1.png)
+![Screenshot (8)](https://user-images.githubusercontent.com/61107453/126739595-718c5aad-366b-4c22-b872-85420adb56cb.png)
+![Screenshot (9)](https://user-images.githubusercontent.com/61107453/126739596-6f6a92ff-a38e-4b05-8e05-61c72766acd4.png)
