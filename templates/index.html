@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Sentiment Analyser</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center">Sentiment Analyser using Bert</h1>
+        <form action="/predict" method="POST">
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Input Text </label>
+                <textarea name='text' class="form-control" id="exampleFormControlTextarea1" rows="4"
+                    placeholder="Start Writing from Here"></textarea>
+            </div>
+            <input type="submit" class="btn-info" value="Predict">
+
+            {% if input_text %}
+            <h4 style="text-align:center">=>{{input_text}}</h4>
+            {% else %}
+            <p></p>
+            {% endif %}
+
+        </form>
+        {% if result %}
+        <div>
+            <table width = '20%' class="table table-striped">
+                {% for key, value in result.items() %}
+
+                <tr>
+                    <th > {{ key }} </th>
+                    <td> {{ value }}% </td>
+                </tr>
+                {% endfor %}
+            </table>    
+        </div>
+        {% else %}
+        <p></p>
+        {% endif %}
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
