@@ -1,4 +1,3 @@
-# Sentiment-analyis-BERT-Trained-on BERT most accurate model
-
+# Sentiment-analyis-BERT-Trained Model and Deployed using Fask
 
 ![](/templates/Sentiment Analyser Bert.gif)
